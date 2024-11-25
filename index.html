@@ -1,1 +1,401 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderSync - Collaborative Travel Management</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 20px;
+            max-width: 1000px; /* Increased width for better image display */
+            margin: auto;
+            background-color: white;
+        }
+
+        section {
+            margin-bottom: 40px; /* Increased margin for separation */
+        }
+
+        section h2 {
+            color: #4CAF50;
+            margin-bottom: 15px; /* Increased margin for headings */
+            font-size: 1.8em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+        }
+
+        /* Design and Architecture Section */
+        .design-architecture .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .design-architecture .screenshot {
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .design-architecture .screenshot img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .design-architecture .screenshot p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* User Interface Section */
+        .user-interface .subsection {
+            margin-bottom: 30px;
+        }
+
+        .user-interface .subsection h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .user-interface .subsection .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .user-interface .subsection .screenshot {
+            flex: 1 1 250px;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        .user-interface .subsection .screenshot img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .user-interface .subsection .screenshot p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Conclusions and Reflections/Learning Section */
+        .conclusions-reflections {
+            margin-bottom: 40px;
+        }
+
+        .conclusions-reflections h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .conclusions-reflections p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Contributors Section */
+        .contributors {
+            margin-bottom: 40px;
+        }
+
+        .contributors h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .contributors p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .contributors .team-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative; /* Changed from fixed to relative for better flow */
+            width: 100%;
+            /* Removed fixed positioning to avoid overlap */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p, section h2, .user-interface .subsection h3, .contributors h2 {
+                font-size: 1.2em;
+            }
+
+            .design-architecture .screenshots, 
+            .user-interface .subsection .screenshots {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .design-architecture .screenshot,
+            .user-interface .subsection .screenshot {
+                max-width: 100%;
+            }
+
+            .contributors .team-list {
+                margin-left: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>WanderSync</h1>
+        <p>Your Collaborative Travel Management System</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Introduction Section -->
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                Organizing trips and managing itineraries can often feel tedious and overwhelming, requiring careful coordination of destinations, transportation, accommodations, and group planning. Our solution to this challenge is <strong>WanderSync</strong>, an app that simplifies the process by providing a centralized, user-friendly platform for organizing and managing your travel plans. Whether you're traveling solo or with a group, WanderSync ensures that everything—from destinations to dining reservations—is seamlessly managed in one place.
+            </p>
+            <p>
+                Some of WanderSync's key features include secure account creation, real-time collaboration, itinerary integration, shared agendas and notes, and an intuitive interface that ensures anyone can use it, regardless of their technical expertise.
+            </p>
+            <p>
+                In summary, WanderSync empowers travelers by transforming the often-complicated process of travel planning into a simple, enjoyable, and collaborative experience.
+            </p>
+        </section>
+
+        <!-- Design and Architecture Section -->
+        <section class="design-architecture">
+            <h2>Design and Architecture</h2>
+            <p>
+                WanderSync is built with a robust and scalable architecture to ensure seamless performance and reliability. Our design focuses on user experience, security, and real-time collaboration, leveraging modern technologies to deliver a high-quality travel management solution.
+            </p>
+            <div class="screenshots">
+                <div class="screenshot">
+                    <img src="images/design_class_diagram.png" alt="Design Class Diagram">
+                    <p>Design Class Diagram: Illustrates the system's structure and relationships between different components.</p>
+                </div>
+                <div class="screenshot">
+                    <img src="images/Seqeunce_diagram.png" alt="Sequence Diagram">
+                    <p>Sequence Diagram: Demonstrates the interaction between user interfaces and backend services.</p>
+                </div>
+                <div class="screenshot">
+                    <img src="images/usercase_diagram.png" alt="Use Case Diagram">
+                    <p>Use Case Diagram: Outlines the various functionalities and user interactions within WanderSync.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Interface Section -->
+        <section class="user-interface">
+            <h2>User Interface</h2>
+            
+            <!-- Welcome Page Subsection -->
+            <div class="subsection">
+                <h3>Welcome Page</h3>
+                <div class="screenshots">
+                    <div class="screenshot">
+                        <img src="images/WelcomePage.png" alt="Welcome Page">
+                        <p>Welcome Page: Users can choose to start or exit the app.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Login Subsection -->
+            <div class="subsection">
+                <h3>Login</h3>
+                <div class="screenshots">
+                    <div class="screenshot">
+                        <img src="images/Login.png" alt="Login Page">
+                        <p>Login Page: Secure user authentication interface.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Subsection -->
+            <div class="subsection">
+                <h3>Destination</h3>
+                <div class="screenshots">
+                    <div class="screenshot">
+                        <img src="images/Destination1.png" alt="Destination Page 1">
+                        <p>Users are given the option to log their trips and calculate vacation time.</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/Destination2.png" alt="Destination Page 2">
+                        <p>Users can input their trip destinations and how long they wish to stay.</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/Destination3.png" alt="Destination Page 3">
+                        <p>This is what WanderSync will look like once a trip is logged.</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/Destination4.png" alt="Destination Page 4">
+                        <p>WanderSync allows you to calculate the length of your vacation with the "Calculate Vacation Time" button.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dining Reservation Subsection -->
+            <div class="subsection">
+                <h3>Dining Reservation</h3>
+                <div class="screenshots">
+                    <div class="screenshot">
+                        <img src="images/DiningReservation1.png" alt="Dining Reservation Page 1">
+                        <p>Create a new Dining Reservation by entering the date, time, and website.</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/DiningReservation2.png" alt="Dining Reservation Page 2">
+                        <p>Dining Reservation made successfully.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logistics Subsection -->
+            <div class="subsection">
+                <h3>Logistics</h3>
+                <div class="screenshots">
+                    <div class="screenshot">
+                        <img src="images/Logistics1.png" alt="Logistics Page">
+                        <p>Users can manage their vacation days and the various trips they have planned. Additionally, they can invite contributors such as family members to their itineraries and share notes with them.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accommodations Subsection -->
+            <div class="subsection">
+                <h3>Accommodations</h3>
+                <div class="screenshots">
+                    <div class="screenshot">
+                        <img src="images/Accommodations1.png" alt="Accommodations Page 1">
+                        <p>Users can log accommodations and the length of their stay.</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/Accommodations2.png" alt="Accommodations Page 2">
+                        <p>Booking an accommodation that has expired.</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/Accommodations3.png" alt="Accommodations Page 3">
+                        <p>Booking a future accommodation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TravelCommunity Subsection -->
+            <div class="subsection">
+                <h3>TravelCommunity</h3>
+                <div class="screenshots">
+                    <div class="screenshot">
+                        <img src="images/TravelCommunity.png" alt="Travel Community">
+                        <p>TravelCommunity: Establishes the community travel database for users to post travel plans, and share trip itineraries</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusions and Reflections/Learning Section -->
+        <section class="conclusions-reflections">
+            <h2>Conclusions and Reflections/Learning</h2>
+            <p>
+                The outcome of this project was a success. We successfully developed WanderSync, a travel-management app that helps users organize trips and vacations. The app includes a robust system for managing accommodations, destinations, and dining reservations, as well as a community-driven travel database. We utilized Firebase for real-time data synchronization and user-specific storage. Additionally, we implemented a bottom navigation system to ensure smooth transitions between core activities.
+            </p>
+            <p>
+                One significant challenge we faced was implementing real-time data synchronization with Firebase. Midway through the project, we discovered issues in our Firebase setup that caused unexpected problems. Resolving these issues was challenging, as the in-class resources were insufficient, requiring us to rely on external materials like Firebase documentation. For example, we learned to use the .child method to store data across different databases. Another hurdle was implementing proper getters and setters to handle objects in Firebase effectively.
+            </p>
+            <p>
+                We also encountered difficulties in delegating work among teammates. Despite establishing pre-sprint agreements, some tasks took longer than expected, leading to scheduling conflicts and delays. At times, task dependencies created bottlenecks, where one team member's work needed to be completed before another could proceed. These moments of overlap and misalignment required flexibility and frequent communication to resolve.
+            </p>
+            <p>
+                Despite these challenges, developing WanderSync provided us with valuable insights into software design and architectural patterns, such as MVVM, SOLID principles, and GRASP. The MVVM structure allowed us to separate application logic into the Model, View, and ViewModel, resulting in clean, maintainable code. SOLID principles guided us in creating a modular and extensible codebase, emphasizing single responsibility and dependency inversion. GRASP principles, like low coupling and high cohesion, informed our responsibility assignments. Applying these patterns not only helped us deliver a well-structured and reliable application but also strengthened our ability to approach future projects with a professional mindset.
+            </p>
+        </section>
+
+        <!-- Contributors Section -->
+        <section class="contributors">
+            <h2>Contributors</h2>
+            <p>
+                We would like to acknowledge the following team members who were instrumental to the website development, as well as the WanderSync project:
+            </p>
+            <ul class="team-list">
+                <li>John Nesbit</li>
+                <li>Hardik Uppal</li>
+                <li>Rishan Sujesh</li>
+                <li>Connor Corrigan</li>
+                <li>Avaneesh Sattenapalli</li>
+                <li>Jayavenkat Ariga</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 WanderSync. All rights reserved.</p>
+    </footer>
+</body>
+</html>
